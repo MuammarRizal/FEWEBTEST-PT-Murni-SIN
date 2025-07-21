@@ -6,9 +6,59 @@
   --description: #8a8a8a;
   --white: #ffffff;
   --white-soft: #f2f2f2;
+  --search-input: #2e67bd;
   font-family: "Poppins";
 }
 
+body {
+  font-size: "Poppins", sans-serif;
+}
+
+.container-content {
+  padding-inline: 9.722vw;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Mont-serrat";
+}
+
+.top-navbar {
+  width: 100vw;
+  height: 4.167vw;
+}
+
+.img-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* FONT-SIZE */
+.fs-12 {
+  font-size: 0.833vw;
+}
+
+.fs-16 {
+  font-size: 1.111vw;
+}
+
+.fs-18 {
+  font-size: 1.25vw;
+}
+
+.fs-22 {
+  font-size: 1.528vw;
+}
+
+.fs-48 {
+  font-size: 3.333vw;
+}
+
+/* TEXT */
 .text-white {
   color: var(--white);
 }
@@ -27,6 +77,10 @@
 
 .text-description {
   color: var(--description);
+}
+
+.text-input {
+  color: var(--search-input);
 }
 
 /* Background */
