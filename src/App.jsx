@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <div>
-        <h1 class="text-3xl font-bold underline text-red-500">Hello World</h1>
+        <h1 class="text-3xl font-bold underline color-primary">Hello World</h1>
       </div>
     </>
   );
