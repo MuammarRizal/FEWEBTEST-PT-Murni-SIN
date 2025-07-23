@@ -5,7 +5,7 @@ function AboutSection() {
       className="container-content py-12 sm:py-14 md:py-16 flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 items-center"
       aria-labelledby="features-heading"
     >
-      <div className="w-full sm:max-w-md md:max-w-lg lg:max-w-full lg:w-1/2 hidden sm:block">
+      <div className="w-full sm:max-w-md md:max-w-lg lg:max-w-full lg:w-1/2 hidden lg:block">
         <img
           src="https://placehold.co/505x367"
           alt="Modern property features and amenities"
@@ -30,9 +30,9 @@ function AboutSection() {
           Ordinary Property
         </h2>
 
-        <div className="w-full sm:max-w-md md:max-w-lg lg:max-w-full lg:w-1/2 block sm:hidden">
+        <div className="w-full md:mb-6 block lg:hidden">
           <img
-            src="https://placehold.co/295x214"
+            src="/assets/images/about-us.jpg"
             alt="Modern property features and amenities"
             className="w-full mx-auto rounded-lg shadow-md"
             loading="lazy"
@@ -45,19 +45,17 @@ function AboutSection() {
           et magnis dis parturient montes.
         </p>
 
-        <p className="description-section my-6 block sm:hidden">
+        <p className="description-section my-6 block sm:hidden w-max">
           Lorem ipsum dolor sit amet, consectetuer
           <br /> adipiscing elit. Aenean commodo ligula <br />
           eget dolor. Aenean massa.
         </p>
 
         <blockquote className="description-section border-l-2 border-gray-300 pl-4 sm:pl-8 italic my-4 hidden sm:block">
-          Donec quam felis, ultricies nec, pellentesque eu, pretium
-          <br className="hidden lg:block" /> quis, sem. Nulla consequat massa
-          quis enim. Donec pede
-          <br className="hidden lg:block" /> justo, fringilla vel, aliquet nec,
-          vulputate eget, arcu. In enim
-          <br className="hidden lg:block" /> justo, rhoncus ut, imperdiet a.
+          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+          aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+          imperdiet a.
         </blockquote>
 
         <blockquote className="description-section border-l-2 border-gray-300 pl-4 sm:pl-8 italic my-4 block sm:hidden">

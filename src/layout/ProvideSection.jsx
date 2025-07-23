@@ -15,11 +15,11 @@ function ProvideSection() {
             and <br className="block sm:hidden" />
             Property Benefits
           </h2>
-          <div className="w-full lg:w-1/2 block sm:hidden mb-6">
+          <div className="w-full block lg:hidden mb-6">
             <img
-              src="https://placehold.co/295x214"
+              src="/assets/images/benefit.jpg"
               alt="Modern property features and amenities"
-              className="w-full max-w-md md:max-w-lg rounded-lg shadow-md"
+              className="w-full rounded-lg shadow-md"
               loading="lazy"
             />
           </div>
@@ -67,9 +67,9 @@ function ProvideSection() {
           </ul>
         </div>
 
-        <div className="w-full lg:w-1/2 justify-center hidden sm:flex">
+        <div className="w-full lg:w-1/2 justify-center hidden lg:flex">
           <img
-            src="https://placehold.co/520x390"
+            src="/assets/images/benefit.jpg"
             alt="Modern property features and amenities"
             className="w-full max-w-md md:max-w-lg rounded-lg shadow-md"
             loading="lazy"

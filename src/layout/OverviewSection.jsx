@@ -27,14 +27,12 @@ function OverviewSection() {
             </h2>
           </div>
 
-          <p className="description-section !text-white-soft hidden sm:block">
+          <p className="description-section !text-white-soft hidden sm:block lg:w-1/2">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean{" "}
-            <br className="hidden lg:block" />
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            <br className="hidden lg:block" />
             penatibus et magnis dis parturient montes.
           </p>
-          <p className="description-section !text-white-soft block sm:hidden">
+          <p className="description-section !text-white-soft block w-max sm:hidden">
             Lorem ipsum dolor sit amet, consectetuer <br />
             adipiscing elit. Aenean commodo ligula
             <br />
@@ -43,18 +41,27 @@ function OverviewSection() {
         </div>
 
         <div className="w-full mt-10 md:mt-20 hidden sm:block">
-          <img
-            src="https://placehold.co/1160x400"
-            alt="Property benefits preview video"
-            className="w-full h-auto rounded-lg shadow-lg"
-          />
+          <iframe
+            className="w-full  rounded-lg shadow-lg"
+            height={400}
+            src="https://www.youtube.com/embed/URJ7ogOACNM?si=BJech0NNd3KG-lI-"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </div>
         <div className="w-full mt-10 md:mt-20 block sm:hidden">
-          <img
-            src="https://placehold.co/295x190"
-            alt="Property benefits preview video"
-            className="w-full h-auto rounded-lg shadow-lg"
-          />
+          <iframe
+            className="w-full h-[315px] rounded-lg shadow-lg"
+            src="https://www.youtube.com/embed/URJ7ogOACNM?si=BJech0NNd3KG-lI-"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </div>
 
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">

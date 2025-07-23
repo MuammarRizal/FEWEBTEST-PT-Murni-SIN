@@ -57,7 +57,7 @@ function BenefitsSection() {
               <div
                 className={`${
                   index === 0 ? "bg-primary" : ""
-                } text-primary mb-6 rounded-full w-[70px] h-[70px] flex justify-center items-center mx-auto`}
+                } text-primary mb-6 rounded-full w-[70px] h-[70px] flex justify-center items-center mx-auto md:mx-[unset]`}
               >
                 <img src={item.icon} alt={item.title} loading="lazy" />
               </div>

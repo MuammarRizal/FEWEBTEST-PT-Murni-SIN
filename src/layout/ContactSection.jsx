@@ -80,14 +80,14 @@ function ContactImage({ isMobile = false }) {
       <img
         src={
           isMobile
-            ? "https://placehold.co/295x214"
-            : "https://placehold.co/505x694"
+            ? "/assets/images/contact-us.jpg"
+            : "/assets/images/contact-us-pc.jpg"
         }
         alt="Skatcher office and team"
         className={`rounded-lg w-full ${
           isMobile
             ? "max-w-[295px] sm:max-w-[480px] lg:max-w-[505px]"
-            : "max-w-[400px] sm:max-w-[480px] lg:max-w-[505px]"
+            : "max-w-[400px] sm:max-w-full lg:max-w-[505px]"
         }`}
         loading="lazy"
       />
@@ -97,7 +97,11 @@ function ContactImage({ isMobile = false }) {
 
 function ContactSection() {
   return (
-    <section id="contact" className="py-12" aria-labelledby="contact-heading">
+    <section
+      id="contact"
+      className="py-1 sm:py-12 md:py-8 lg:py-0"
+      aria-labelledby="contact-heading"
+    >
       <div className="container-content">
         <div className="flex flex-col lg:flex-row gap-10 max-w-6xl mx-auto">
           <ContactForm />

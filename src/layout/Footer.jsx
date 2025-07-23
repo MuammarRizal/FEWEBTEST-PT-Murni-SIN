@@ -6,10 +6,8 @@ function Footer() {
       className="w-full bg-secondary text-gray-300 pt-20 pb-10"
       role="contentinfo"
     >
-      <div className="container-content max-w-7xl mx-auto px-4 md:px-10">
-        {/* Main Grid Section */}
+      <div className="container-content mx-auto">
         <div className="flex flex-col lg:flex-row gap-10">
-          {/* Company Info */}
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-5">
               <img
@@ -57,9 +55,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Links Section */}
-          <div className="flex flex-wrap gap-10 flex-1 justify-between">
-            {/* Company Info */}
+          <div className="flex gap-2 flex-1 justify-between">
             <div>
               <h3 className="text-white font-semibold text-lg mb-4">Company</h3>
               <ul className="space-y-2 text-sm">
@@ -82,7 +78,6 @@ function Footer() {
               </ul>
             </div>
 
-            {/* Features */}
             <div>
               <h3 className="text-white font-semibold text-lg mb-4">
                 Features
@@ -105,7 +100,6 @@ function Footer() {
               </ul>
             </div>
 
-            {/* Help Center */}
             <div className="hidden sm:block">
               <h3 className="text-white font-semibold text-lg mb-4">
                 Help Center
@@ -134,7 +128,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500 mt-20 hidden sm:flex">
           <p className="text-footer transition">Terms & Condition</p>
           <p className="text-footer text-center md:text-left">
@@ -145,7 +138,6 @@ function Footer() {
           </p>
         </div>
 
-        {/* Bottom Mobile Text */}
         <div className="mt-20 block sm:hidden">
           <p className="text-footer text-msn-10">
             &copy; 2022 Skatcher. All Rights Reserved
