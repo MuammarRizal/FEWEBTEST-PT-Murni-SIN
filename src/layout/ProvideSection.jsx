@@ -6,7 +6,7 @@ function ProvideSection() {
       aria-labelledby="about-heading"
     >
       <div className="container-content flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-20">
-        <div className="text-container flex flex-col w-full lg:w-1/2 text-center lg:text-left">
+        <div className="text-container flex flex-col w-full lg:w-1/2 md:text-left">
           <h4 className="title-section">Provide</h4>
           <h2 id="about-heading" className="subtitle-section">
             We Provide Many Features <br className="hidden md:block" />
@@ -27,7 +27,7 @@ function ProvideSection() {
             ].map((item, index) => (
               <li
                 key={index}
-                className=" flex items-start gap-2 justify-center lg:justify-start"
+                className=" flex items-start gap-2 justify-center md:justify-start"
               >
                 <span className="text-gray-soft text-lg">✓</span>
                 <span className="sm:text-msn-16 text-gray-soft">{item}</span>

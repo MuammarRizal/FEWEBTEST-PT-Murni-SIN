@@ -6,7 +6,7 @@ function Footer() {
       className="w-full bg-secondary text-gray-300 pt-20 pb-10"
       role="contentinfo"
     >
-      <div className="container-content max-w-7xl mx-auto px-4 md:px-6">
+      <div className="container-content max-w-7xl mx-auto px-4 md:px-10">
         {/* Main Grid Section */}
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Company Info */}
@@ -23,9 +23,12 @@ function Footer() {
             </div>
 
             <p className="text-white text-sm leading-relaxed lg:text-msn-12 lg:w-max">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing <br />
-              elit. Aenean commodo ligula eget dolor. Aenean massa. <br />
-              Cum sociis natoque penatibus et magnis dis parturient <br />
+              Lorem ipsum dolor sit amet, consectetuer adipiscing{" "}
+              <br className="hidden lg:block" />
+              elit. Aenean commodo ligula eget dolor. Aenean massa.{" "}
+              <br className="hidden lg:block" />
+              Cum sociis natoque penatibus et magnis dis parturient{" "}
+              <br className="hidden lg:block" />
               montes, nascetur ridiculus mus.
             </p>
 

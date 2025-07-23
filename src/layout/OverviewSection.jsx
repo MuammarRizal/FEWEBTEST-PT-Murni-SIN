@@ -3,12 +3,12 @@ function OverviewSection() {
     {
       title: "Awesome Features",
       description:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean<br /> commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
     },
     {
       title: "Luxury Property",
       description:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean<br /> commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
     },
   ];
 
@@ -19,9 +19,9 @@ function OverviewSection() {
           Overview
         </h1>
 
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <div className="w-full md:w-1/2">
-            <h2 className="text-2xl sm:text-3xl md:text-msn-36 font-semibold leading-snug lg:leading-[1.5]">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+          <div className="w-full lg:w-1/2">
+            <h2 className="text-2xl sm:text-3xl md:text-msn-36 font-semibold leading-snug md:leading-[1.5]">
               See Our Property Benefits <br className="hidden sm:block" />
               by Preview Video Below
             </h2>
@@ -29,9 +29,9 @@ function OverviewSection() {
 
           <p className="description-section !text-white-soft">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean{" "}
-            <br />
+            <br className="hidden lg:block" />
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            <br />
+            <br className="hidden lg:block" />
             penatibus et magnis dis parturient montes.
           </p>
         </div>
@@ -44,14 +44,14 @@ function OverviewSection() {
           />
         </div>
 
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
+        <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
           {features.map((feature, idx) => (
             <div key={idx}>
               <h3 className="text-lg sm:text-msn-18 font-semibold mb-2">
                 {feature.title}
               </h3>
               <p
-                className="text-sm sm:text-msn-16 text-neutral-400 lg:leading-[1.5] text-white-soft w-max"
+                className="text-sm sm:text-msn-16 text-neutral-400 lg:leading-[1.5] text-white-soft"
                 dangerouslySetInnerHTML={{ __html: feature.description }}
               />
             </div>

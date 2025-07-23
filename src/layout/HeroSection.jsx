@@ -95,15 +95,15 @@ function HeroSection() {
         </nav>
 
         <div className="flex flex-col-reverse lg:flex-row mt-14 gap-10">
-          <div className="text-container w-full lg:w-[60%] text-center md:text-left lg:mt-10">
+          <div className="text-container w-full lg:w-[60%] text-center md:text-left lg:mt-10 flex flex-col md:items-center lg:items-start">
             <h1
               id="hero-heading"
-              className="text-secondary lg:text-white font-semibold text-3xl md:text-4xl leading-tight md:leading-snug lg:leading-snug lg:text-msn-48"
+              className="text-secondary lg:text-white font-semibold text-3xl md:text-4xl leading-tight md:leading-snug lg:leading-snug lg:text-msn-48 md:text-center lg:text-start"
             >
               Discover Modern <br />
               Single Property
             </h1>
-            <p className="text-white-soft text-sm sm:text-msn-16 mt-6 md:mt-10 leading-relaxed">
+            <p className=" text-sm sm:text-msn-16 mt-6 md:mt-10 leading-relaxed md:text-secondary md:text-center lg:text-white-soft lg:text-start">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean{" "}
               <br className="hidden sm:block" />
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque{" "}

@@ -14,7 +14,7 @@ function AboutSection() {
         />
       </div>
 
-      <div className="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center md:text-left">
         <h4 className="title-section">About Us</h4>
         <h2 id="features-heading" className="subtitle-section">
           Discover an Extraordinary <br className="hidden sm:inline" />
@@ -27,11 +27,13 @@ function AboutSection() {
           et magnis dis parturient montes.
         </p>
 
-        <blockquote className="description-section border-l-2 border-gray-300 pl-4 sm:pl-6 italic my-4">
-          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-          Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-          aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-          imperdiet a.
+        <blockquote className="description-section border-l-2 border-gray-300 pl-4 sm:pl-8 italic my-4">
+          Donec quam felis, ultricies nec, pellentesque eu, pretium
+          <br className="hidden lg:block" /> quis, sem. Nulla consequat massa
+          quis enim. Donec pede
+          <br className="hidden lg:block" /> justo, fringilla vel, aliquet nec,
+          vulputate eget, arcu. In enim <br className="hidden lg:block" />
+          justo, rhoncus ut, imperdiet a.
         </blockquote>
       </div>
     </section>
