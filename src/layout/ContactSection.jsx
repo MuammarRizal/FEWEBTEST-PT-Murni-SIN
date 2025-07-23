@@ -14,19 +14,14 @@ function ContactSection() {
             aria-label="Contact form"
           >
             <div className="text-container">
-              <h4 className="text-base text-primary font-semibold mb-6">
-                Get In Touch
-              </h4>
-              <h2
-                id="contact-heading"
-                className="text-gray-800 text-2xl md:text-4xl font-semibold leading-tight mb-7 lg:leading-[1.3]"
-              >
+              <h4 className="title-section">Get In Touch</h4>
+              <h2 id="contact-heading" className="subtitle-section">
                 Let Us Know by Sent Your
                 <br className="hidden md:block" />
                 Message For More Information
               </h2>
 
-              <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6 max-w-md">
+              <p className="description-section">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean{" "}
                 <br />
                 commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -36,10 +31,7 @@ function ContactSection() {
             </div>
 
             <div className="mt-11">
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-700 mb-4 lg:text-lg"
-              >
+              <label htmlFor="email" className="label">
                 E-mail Address
               </label>
               <input
@@ -54,10 +46,7 @@ function ContactSection() {
             </div>
 
             <div className="mt-7">
-              <label
-                htmlFor="message"
-                className="block text-sm lg:text-lg font-medium text-gray-700 mb-1"
-              >
+              <label htmlFor="message" className="label">
                 Message
               </label>
               <textarea
@@ -73,7 +62,7 @@ function ContactSection() {
 
             <button
               type="submit"
-              className="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors w-full lg:w-[488px] lg:h-[60px] mt-4 lg:text-lg"
+              className="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors w-full lg:w-[488px] lg:h-[60px] mt-4 lg:text-msn-18"
               aria-label="Submit contact form"
             >
               Send Message

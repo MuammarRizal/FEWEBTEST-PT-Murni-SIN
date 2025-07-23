@@ -7,16 +7,13 @@ function ProvideSection() {
     >
       <div className="container-content mx-auto px-4 flex flex-col lg:flex-row gap-18 justify-between items-center">
         <div className="text-container flex flex-col justify-center w-full lg:w-1/2">
-          <h4 className="text-base text-primary font-semibold mb-2">Provide</h4>
-          <h2
-            id="about-heading"
-            className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight mb-4"
-          >
+          <h4 className="title-section">Provide</h4>
+          <h2 id="about-heading" className="subtitle-section">
             We Provide Many Features <br />
             and Property Benefits
           </h2>
 
-          <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
+          <p className="description-section mb-6">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean{" "}
             <br />
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -25,15 +22,15 @@ function ProvideSection() {
           </p>
 
           <ul className="space-y-3">
-            <li className="text-gray-700 flex items-start gap-2">
+            <li className="sm:text-msn-16 text-gray-soft flex items-start gap-2">
               <span className="text-primary">✓</span>
               <span>Lorem ipsum dolor sit amet, consectetuer</span>
             </li>
-            <li className="text-gray-700 flex items-start gap-2">
+            <li className="sm:text-msn-16 text-gray-soft text-gray-700 flex items-start gap-2">
               <span className="text-primary">✓</span>
               <span>Lorem ipsum dolor sit amet, consectetuer</span>
             </li>
-            <li className="text-gray-700 flex items-start gap-2">
+            <li className="sm:text-msn-16 text-gray-soft text-gray-700 flex items-start gap-2">
               <span className="text-primary">✓</span>
               <span>Lorem ipsum dolor sit amet, consectetuer</span>
             </li>

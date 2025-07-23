@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   --primary: #a85c01;
   --secondary: #252525;
@@ -107,4 +108,24 @@ body {
 #about .img-container {
   width: 505px;
   height: 367px;
+}
+
+.title-section {
+  @apply text-msn-18 text-primary font-semibold mb-2;
+}
+
+.subtitle-section {
+  @apply text-2xl sm:text-3xl lg:text-msn-36 font-semibold lg:leading-[1.3] mb-4 text-secondary leading-tight;
+}
+
+.description-section {
+  @apply text-sm sm:text-msn-16 text-gray-soft leading-relaxed;
+}
+
+.label {
+  @apply block text-sm font-medium text-secondary mb-4 lg:text-msn-18 lg:leading-[1.4];
+}
+
+.text-footer {
+  @apply text-white hover:text-white transition-colors lg:text-msn-14;
 }

@@ -43,12 +43,17 @@ function BenefitsSection() {
               >
                 <img src={item.icon} alt={item.title} loading="lazy" />
               </div>
-              <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2">
+              <h3 className="text-base sm:text-msn-18 font-semibold text-secondary mb-2">
                 {item.title}
               </h3>
               <p
-                className="text-sm text-gray-600 leading-relaxed"
+                className="text-sm text-gray-soft leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: item.description }}
+              />
+              <img
+                src="/assets/images/icons/icon-arrow-right-small-primary.png"
+                alt="icon"
+                className="mt-4"
               />
             </div>
           ))}
@@ -56,18 +61,13 @@ function BenefitsSection() {
 
         {/* Text Section */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
-          <h4 className="text-sm sm:text-base text-primary font-semibold mb-2">
-            Benefits
-          </h4>
-          <h2
-            id="benefits-heading"
-            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug md:leading-snug mb-4"
-          >
+          <h4 className="title-section">Benefits</h4>
+          <h2 id="benefits-heading" className="subtitle-section">
             Explore More About <br className="hidden md:block" />
             Our Property & Benefits
           </h2>
 
-          <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-5">
+          <p className="text-sm sm:msn-16 text-gray-soft leading-relaxed mb-5">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             <br className="hidden sm:block" />
             commodo ligula eget dolor. Aenean massa.
@@ -91,11 +91,11 @@ function BenefitsSection() {
             },
           ].map((item, index) => (
             <div key={index} className="mt-6">
-              <h3 className="text-sm sm:text-base text-secondary font-semibold mb-2">
+              <h3 className="text-sm sm:text-msn-18 text-secondary font-semibold mb-2">
                 {item.title}
               </h3>
               <p
-                className="text-sm sm:text-base text-gray-600 leading-relaxed"
+                className="description-section"
                 dangerouslySetInnerHTML={{ __html: item.description }}
               />
             </div>

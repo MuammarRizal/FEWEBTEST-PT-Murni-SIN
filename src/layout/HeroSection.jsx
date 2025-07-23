@@ -129,11 +129,11 @@ function HeroSection() {
                     alt="icon location"
                     className="w-6 h-6 md:w-8 md:h-8"
                   />
-                  <p className="text-2xl sm:text-3xl md:text-4xl font-semibold text-black">
+                  <p className="text-2xl sm:text-3xl md:text-msn-38 font-semibold text-secondary">
                     4.500
                   </p>
                 </div>
-                <h4 className="text-base sm:text-lg font-medium mt-2">
+                <h4 className="text-base sm:text-msn-18 font-medium mt-2 text-secondary">
                   Our Square Feets
                 </h4>
               </div>
@@ -144,11 +144,11 @@ function HeroSection() {
                     alt="icon stars"
                     className="w-6 h-6 md:w-8 md:h-8"
                   />
-                  <p className="text-2xl sm:text-3xl md:text-4xl font-semibold text-black">
+                  <p className="text-2xl sm:text-3xl md:text-msn-38 font-semibold text-secondary">
                     5.000
                   </p>
                 </div>
-                <h4 className="text-base sm:text-lg font-medium mt-2">
+                <h4 className="text-base sm:text-msn-18 font-medium mt-2 text-secondary">
                   Rates by 1.100
                 </h4>
               </div>

@@ -10,7 +10,7 @@ export default {
       colors: {
         primary: "#A85C01",
         secondary: "#252525",
-        description: "#8a8a8a",
+        "gray-soft": "#8a8a8a",
         "white-soft": "#f2f2f2",
       },
       spacing: {
@@ -18,6 +18,7 @@ export default {
       },
       fontSize: {
         "msn-12": "0.795rem", // convert 12px
+        "msn-14": "0.875rem", // convert 14px
         "msn-16": "1rem", // convert 16px
         "msn-18": "1.125rem", // convert 18px
         "msn-22": "1.375rem", // convert 22px

@@ -17,12 +17,12 @@ function Footer() {
                 alt="Skatcher Logo"
                 loading="lazy"
               />
-              <span className="text-white text-xl font-bold italic">
+              <span className="text-white text-xl font-bold italic font-montserrat lg:text-msn-22">
                 Skatcher
               </span>
             </div>
 
-            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+            <p className="text-white text-sm leading-relaxed max-w-xs lg:text-msn-12">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -60,15 +60,13 @@ function Footer() {
                   "9:00 AM - 7:00 PM",
                   "@officialpage",
                 ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-2">
+                  <li key={index} className="flex items-center gap-2">
                     <img
                       src="/assets/images/icons/icon-arrow-right-small.png"
                       alt="icon arrow"
-                      className="w-[4px] h-[6px] mt-1"
+                      className="w-[4px] h-[6px]"
                     />
-                    <span className="text-gray-400 hover:text-white transition-colors">
-                      {item}
-                    </span>
+                    <span className="text-footer font-montserrat ">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -82,16 +80,13 @@ function Footer() {
               <ul className="space-y-2 text-sm">
                 {["Home", "About", "Provide", "Benefits", "Contact"].map(
                   (type) => (
-                    <li key={type} className="flex items-start gap-2">
+                    <li key={type} className="flex items-center gap-2">
                       <img
                         src="/assets/images/icons/icon-arrow-right-small.png"
                         alt="icon arrow"
-                        className="w-[4px] h-[6px] mt-1"
+                        className="w-[4px] h-[6px]"
                       />
-                      <a
-                        href="#"
-                        className="text-gray-400 hover:text-white transition-colors"
-                      >
+                      <a href="#" className="text-footer font-montserrat">
                         {type}
                       </a>
                     </li>
@@ -113,16 +108,13 @@ function Footer() {
                   "History Background",
                   "Newsletter Subscription",
                 ].map((type) => (
-                  <li key={type} className="flex items-start gap-2">
+                  <li key={type} className="flex items-center gap-2">
                     <img
                       src="/assets/images/icons/icon-arrow-right-small.png"
                       alt="icon arrow"
-                      className="w-[4px] h-[6px] mt-1"
+                      className="w-[4px] h-[6px]"
                     />
-                    <a
-                      href="#"
-                      className="text-gray-400 hover:text-white transition-colors"
-                    >
+                    <a href="#" className="text-footer font-montserrat ">
                       {type}
                     </a>
                   </li>
@@ -137,11 +129,13 @@ function Footer() {
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-          <p className="hover:text-white transition">Terms & Condition</p>
-          <p className="text-center md:text-left">
+          <p className="text-footer transition">Terms & Condition</p>
+          <p className="text-footer text-center md:text-left">
             &copy; 2022 Skatcher. All Rights Reserved
           </p>
-          <p className="hover:text-white transition">Privacy & Policy</p>
+          <p className="text-footer hover:text-white transition">
+            Privacy & Policy
+          </p>
         </div>
       </div>
     </footer>
