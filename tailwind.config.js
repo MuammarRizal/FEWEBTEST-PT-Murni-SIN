@@ -14,7 +14,7 @@ export default {
         "white-soft": "#f2f2f2",
       },
       spacing: {
-        msn: "40px",
+        140: "8.795rem",
       },
       fontSize: {
         "msn-12": "0.795rem", // convert 12px

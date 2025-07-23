@@ -1,5 +1,3 @@
-import React from "react";
-
 function BenefitsSection() {
   return (
     <section
@@ -14,22 +12,22 @@ function BenefitsSection() {
             {
               icon: "/assets/images/icons/icon-air-conditioner.png",
               title: "Air Conditioned",
-              description: "Lorem ipsum dolor sit <br>amet, consectetuer.",
+              description: "Lorem ipsum dolor sit amet, consectetuer.",
             },
             {
               icon: "/assets/images/icons/icon-wifi.png",
               title: "Free WiFi",
-              description: "Lorem ipsum dolor sit <br>amet, consectetuer.",
+              description: "Lorem ipsum dolor sit amet, consectetuer.",
             },
             {
               icon: "/assets/images/icons/icon-swimming-pool.png",
               title: "Swimming Pool",
-              description: "Lorem ipsum dolor sit <br>amet, consectetuer.",
+              description: "Lorem ipsum dolor sit amet, consectetuer.",
             },
             {
               icon: "/assets/images/icons/icon-television.png",
               title: "Television",
-              description: "Lorem ipsum dolor sit <br>amet, consectetuer.",
+              description: "Lorem ipsum dolor sit amet, consectetuer.",
             },
           ].map((item, index) => (
             <div
@@ -67,9 +65,8 @@ function BenefitsSection() {
             Our Property & Benefits
           </h2>
 
-          <p className="text-sm sm:msn-16 text-gray-soft leading-relaxed mb-5">
+          <p className="description-section">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            <br className="hidden sm:block" />
             commodo ligula eget dolor. Aenean massa.
           </p>
 
@@ -77,17 +74,17 @@ function BenefitsSection() {
             {
               title: "Awesome Features",
               description:
-                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br />commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
+                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
             },
             {
               title: "Luxurious Interior Design",
               description:
-                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br />commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
+                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
             },
             {
               title: "Modern Concept",
               description:
-                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br />commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
+                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
             },
           ].map((item, index) => (
             <div key={index} className="mt-6">

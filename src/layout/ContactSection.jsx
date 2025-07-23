@@ -1,36 +1,24 @@
 function ContactSection() {
   return (
-    <section
-      id="contact"
-      className="relative py-2"
-      aria-labelledby="contact-heading"
-    >
+    <section id="contact" className="" aria-labelledby="contact-heading">
       <div className="container-content">
-        <div className="flex flex-col lg:flex-row gap-10 max-w-6xl">
-          <form
-            className="flex-1 min-w-[300px] lg:min-w-[500px]"
-            action="#"
-            method="POST"
-            aria-label="Contact form"
-          >
-            <div className="text-container">
-              <h4 className="title-section">Get In Touch</h4>
-              <h2 id="contact-heading" className="subtitle-section">
+        <div className="flex flex-col lg:flex-row gap-10 max-w-6xl mx-auto">
+          <form className="flex-1 w-full" aria-label="Contact form">
+            <div className="text-container mb-6">
+              <h4 className="title-section text-primary mb-2">Get In Touch</h4>
+              <h2 id="contact-heading" className="subtitle-section w-max">
                 Let Us Know by Sent Your
                 <br className="hidden md:block" />
                 Message For More Information
               </h2>
-
-              <p className="description-section">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean{" "}
-                <br />
+              <p className="description-section mt-4">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                <br />
                 penatibus et magnis dis parturient montes.
               </p>
             </div>
 
-            <div className="mt-11">
+            <div className="mt-6">
               <label htmlFor="email" className="label">
                 E-mail Address
               </label>
@@ -39,13 +27,13 @@ function ContactSection() {
                 id="email"
                 name="email"
                 required
-                className="w-full lg:w-[488px] rounded-md border border-gray-300 px-4 py-2 focus:ring-primary focus:border-primary transition lg:h-[60px]"
+                className="w-full rounded-md border border-gray-300 px-4 py-3 focus:ring-primary focus:border-primary transition"
                 aria-required="true"
                 placeholder="Insert Your E-mail Address Here"
               />
             </div>
 
-            <div className="mt-7">
+            <div className="mt-6">
               <label htmlFor="message" className="label">
                 Message
               </label>
@@ -54,7 +42,7 @@ function ContactSection() {
                 name="message"
                 rows="4"
                 required
-                className="w-full lg:w-[488px] h-[150px] rounded-md border border-gray-300 px-7 py-5 focus:ring-primary focus:border-primary transition lg:mt-2"
+                className="w-full h-[150px] rounded-md border border-gray-300 px-4 py-3 focus:ring-primary focus:border-primary transition"
                 aria-required="true"
                 placeholder="Insert Your Message Here"
               ></textarea>
@@ -62,18 +50,18 @@ function ContactSection() {
 
             <button
               type="submit"
-              className="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors w-full lg:w-[488px] lg:h-[60px] mt-4 lg:text-msn-18"
+              className="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark transition-colors w-full mt-6 text-base sm:text-lg"
               aria-label="Submit contact form"
             >
               Send Message
             </button>
           </form>
 
-          <div className="ms-0 lg:ms-14 flex justify-center items-center">
+          <div className="lg:ms-14 flex justify-center items-center">
             <img
               src="https://placehold.co/505x694"
               alt="Skatcher office and team"
-              className="rounded-lg w-full max-w-[505px]"
+              className="rounded-lg w-full max-w-[400px] sm:max-w-[480px] lg:max-w-[505px]"
               loading="lazy"
             />
           </div>

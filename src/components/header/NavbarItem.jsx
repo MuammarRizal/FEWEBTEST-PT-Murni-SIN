@@ -1,16 +1,16 @@
-function NavbarItem({ icon, text }) {
+function NavbarItem({ icon, text, ...props }) {
   return (
-    <div className="item-navbar flex items-center gap-2 sm:gap-3">
+    <div
+      className="flex items-center gap-2 text-white text-sm lg:text-msn-12"
+      {...props}
+    >
       <img
         src={`/assets/images/icons/icon-${icon}.png`}
         alt={`icon ${icon}`}
-        className="w-5 h-5 sm:w-4 sm:h-4"
+        className="w-4 h-4 sm:w-5 sm:h-5"
+        loading="lazy"
       />
-      {text && (
-        <p className="hidden lg:block text-white text-sm lg:text-msn-12">
-          {text}
-        </p>
-      )}
+      {text && <p className="hidden sm:inline-block">{text}</p>}
     </div>
   );
 }

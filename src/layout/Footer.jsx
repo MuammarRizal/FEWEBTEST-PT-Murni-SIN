@@ -3,7 +3,7 @@ import { dataSocialMedia } from "../datas/data.header";
 function Footer() {
   return (
     <footer
-      className="w-full bg-gray-900 text-gray-300 pt-20 pb-10"
+      className="w-full bg-secondary text-gray-300 pt-20 pb-10"
       role="contentinfo"
     >
       <div className="container-content max-w-7xl mx-auto px-4 md:px-6">
@@ -22,10 +22,11 @@ function Footer() {
               </span>
             </div>
 
-            <p className="text-white text-sm leading-relaxed max-w-xs lg:text-msn-12">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            <p className="text-white text-sm leading-relaxed lg:text-msn-12 lg:w-max">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing <br />
+              elit. Aenean commodo ligula eget dolor. Aenean massa. <br />
+              Cum sociis natoque penatibus et magnis dis parturient <br />
+              montes, nascetur ridiculus mus.
             </p>
 
             <div className="flex gap-3 mt-6">
@@ -125,10 +126,9 @@ function Footer() {
         </div>
 
         {/* Divider */}
-        <hr className="my-8 border-gray-700" />
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500 mt-20">
           <p className="text-footer transition">Terms & Condition</p>
           <p className="text-footer text-center md:text-left">
             &copy; 2022 Skatcher. All Rights Reserved

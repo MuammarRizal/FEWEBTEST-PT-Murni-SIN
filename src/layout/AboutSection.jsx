@@ -2,21 +2,19 @@ function AboutSection() {
   return (
     <section
       id="about"
-      className="container-content mx-auto px-4 py-16 flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 justify-between items-center"
+      className="container-content py-12 sm:py-14 md:py-16 flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 items-center"
       aria-labelledby="features-heading"
     >
-      {/* Image Container - Tetap sama persis */}
-      <div className="flex-shrink-0 w-full lg:w-1/2 mt-6 lg:mt-0">
+      <div className="w-full sm:max-w-md md:max-w-lg lg:max-w-full lg:w-1/2">
         <img
           src="https://placehold.co/505x367"
           alt="Modern property features and amenities"
-          className="w-full max-w-md mx-auto lg:mx-0 rounded-lg shadow-md"
+          className="w-full mx-auto rounded-lg shadow-md"
           loading="lazy"
         />
       </div>
 
-      {/* Text Container - Tetap sama persis */}
-      <div className="w-full lg:w-1/2 flex flex-col justify-center">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left">
         <h4 className="title-section">About Us</h4>
         <h2 id="features-heading" className="subtitle-section">
           Discover an Extraordinary <br className="hidden sm:inline" />
@@ -29,7 +27,7 @@ function AboutSection() {
           et magnis dis parturient montes.
         </p>
 
-        <blockquote className="border-l-2 border-gray-300 pl-6 italic text-gray-700 my-4 text-sm sm:text-msn-16 text-gray-soft leading-[1.4]">
+        <blockquote className="description-section border-l-2 border-gray-300 pl-4 sm:pl-6 italic my-4">
           Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
           Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
           aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,

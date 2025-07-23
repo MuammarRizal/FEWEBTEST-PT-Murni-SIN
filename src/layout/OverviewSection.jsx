@@ -3,24 +3,22 @@ function OverviewSection() {
     {
       title: "Awesome Features",
       description:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean<br /> commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
     },
     {
       title: "Luxury Property",
       description:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean<br /> commodo ligula eget dolor. Aenean massa. Cum sociis natoque.",
     },
   ];
 
   return (
     <section className="container-content bg-secondary py-16 sm:py-20 md:py-28 text-white relative">
       <div className="max-w-7xl mx-auto space-y-8 sm:space-y-10 ">
-        {/* Heading */}
         <h1 className="text-sm sm:text-msn-18 font-semibold uppercase text-white-soft">
           Overview
         </h1>
 
-        {/* Title + Description */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div className="w-full md:w-1/2">
             <h2 className="text-2xl sm:text-3xl md:text-msn-36 font-semibold leading-snug lg:leading-[1.5]">
@@ -29,14 +27,15 @@ function OverviewSection() {
             </h2>
           </div>
 
-          <p className="text-sm sm:text-msn-16 text-white-soft w-full md:w-1/2 lg:leading-[1.5]">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          <p className="description-section !text-white-soft">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean{" "}
+            <br />
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            <br />
             penatibus et magnis dis parturient montes.
           </p>
         </div>
 
-        {/* Video/Image */}
         <div className="w-full mt-10 md:mt-20">
           <img
             src="https://placehold.co/1160x400"
@@ -45,16 +44,16 @@ function OverviewSection() {
           />
         </div>
 
-        {/* Features Grid */}
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
           {features.map((feature, idx) => (
             <div key={idx}>
               <h3 className="text-lg sm:text-msn-18 font-semibold mb-2">
                 {feature.title}
               </h3>
-              <p className="text-sm sm:text-msn-16 text-neutral-400 lg:leading-[1.5] text-white-soft">
-                {feature.description}
-              </p>
+              <p
+                className="text-sm sm:text-msn-16 text-neutral-400 lg:leading-[1.5] text-white-soft w-max"
+                dangerouslySetInnerHTML={{ __html: feature.description }}
+              />
             </div>
           ))}
         </div>

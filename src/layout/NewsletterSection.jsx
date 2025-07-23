@@ -1,8 +1,8 @@
 function NewsletterSection() {
   return (
-    <section className="container-content w-full bg-neutral-50 py-12 mt-36">
+    <section className="container-content w-full py-12 mt-36">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-secondary text-center md:text-left">
+        <h2 className="text-2xl md:text-3xl lg:text-msn-36 font-semibold text-secondary text-center md:text-left lg:w-max">
           Subscribe to Our Newsletter
         </h2>
 
