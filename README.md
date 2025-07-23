@@ -1,12 +1,98 @@
-# React + Vite
+# 🧩 Design Slicing Project - React + TailwindCSS + Swiper + Lucide React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **frontend slicing implementation** based on a design (e.g., from Figma), built using **React**, styled with **Tailwind CSS**, and enhanced with **Swiper.js** for carousels/sliders and **Lucide-react** for icons.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ⚛️ Built with **React**
+- 🎨 Styled using **Tailwind CSS**
+- 🖼️ Responsive image sliders using **Swiper**
+- 🧩 Beautiful icons from **Lucide-react**
+- 💡 Clean and reusable components
+- 🚀 Ready for deployment
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Requirements
+
+Before you begin, make sure you have the following installed:
+
+- **Node.js** `>= 18` → [Download Node.js](https://nodejs.org/)
+- **Package Manager**: `npm` (comes with Node.js) or `yarn`
+- **Modern Browser**: Chrome, Firefox, Edge (for development testing)
+- **Code Editor**: [Visual Studio Code](https://code.visualstudio.com/) recommended
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/MuammarRizal/FEWEBTEST-PT-Murni-SIN.git
+cd FEWEBTEST-PT-Murni-SIN
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Start Development Server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+### 📁 Project Structure (Example)
+```text
+|
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── Layout/
+│   ├── App.jsx
+│   └── main.jsx
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── vite.config.js
+
+### 4. 🔧 Main Technologies
+
+- React
+
+React is used for building reusable UI components.
+
+- Tailwind CSS
+
+Tailwind is used as the utility-first CSS framework. It is already configured via tailwind.config.js.
+
+- Swiper.js
+
+Used to create responsive sliders or carousels.
+Install command (already in dependencies):
+
+### 5. 🛠️ Build for Production
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+### 6. 🧪 Preview Production Build
+
+```bash
+npm run preview
+# or
+yarn preview
+```
