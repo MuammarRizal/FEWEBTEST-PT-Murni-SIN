@@ -1,3 +1,5 @@
+import ContentSection from "../components/ContentSection";
+
 function ProvideSection() {
   return (
     <section
@@ -6,35 +8,15 @@ function ProvideSection() {
       aria-labelledby="about-heading"
     >
       <div className="container-content flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-20">
-        <div className="text-container flex flex-col w-full lg:w-1/2 md:text-left">
-          <h4 className="title-section">Provide</h4>
-          <h2 id="about-heading" className="subtitle-section">
-            We Provide Many
-            <br className="block sm:hidden" /> Features{" "}
-            <br className="hidden sm:block" />
-            and <br className="block sm:hidden" />
-            Property Benefits
-          </h2>
-          <div className="w-full block lg:hidden mb-6">
-            <img
-              src="/assets/images/benefit.jpg"
-              alt="Modern property features and amenities"
-              className="w-full rounded-lg shadow-md"
-              loading="lazy"
-            />
-          </div>
-          <p className="description-section mb-6 hidden sm:block">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean{" "}
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes.
-          </p>
-          <p className="description-section mb-6 block sm:hidden">
-            Lorem ipsum dolor sit amet, consectetuer <br />
-            adipiscing elit. Aenean commodo ligula
-            <br />
-            eget dolor. Aenean massa.
-          </p>
-
+        <ContentSection
+          title={"Provide"}
+          subtitlePc={"We Provide Many Features and Property Benefits"}
+          subtitleMb={"We Provide Many Features and Property Benefits"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+          }
+          image={"/assets/images/benefit.jpg"}
+        >
           <ul className="space-y-3 hidden sm:block">
             {[
               "Lorem ipsum dolor sit amet, consectetuer",
@@ -65,7 +47,7 @@ function ProvideSection() {
               </li>
             ))}
           </ul>
-        </div>
+        </ContentSection>
 
         <div className="w-full lg:w-1/2 justify-center hidden lg:flex">
           <img

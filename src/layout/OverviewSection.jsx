@@ -1,3 +1,5 @@
+import TextContainer from "../components/TextContainer";
+
 function OverviewSection() {
   const features = [
     {
@@ -65,16 +67,16 @@ function OverviewSection() {
         </div>
 
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
-          {features.map((feature, idx) => (
-            <div key={idx}>
-              <h3 className="text-msn-16 sm:text-msn-18 font-semibold mb-2">
-                {feature.title}
-              </h3>
-              <p
-                className="text-msn-12 sm:text-msn-16 text-neutral-400 lg:leading-[1.5] text-white-soft"
-                dangerouslySetInnerHTML={{ __html: feature.description }}
-              />
-            </div>
+          {features.map((item, index) => (
+            <TextContainer
+              title={item.title}
+              description={item.description}
+              key={index}
+              classname={{
+                title: "!text-white",
+                description: "!text-white-soft",
+              }}
+            />
           ))}
         </div>
       </div>

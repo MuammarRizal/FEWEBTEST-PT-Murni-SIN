@@ -1,6 +1,23 @@
-import { dataSocialMedia } from "../datas/data.header";
+import List from "../components/List";
+import ListItem from "../components/ListItem";
 
 function Footer() {
+  const dataCompany = [
+    "123 Avenue, New York",
+    "+(1600) 456 7890",
+    "yourid@example.com",
+    "9:00 AM - 7:00 PM",
+    "@officialpage",
+  ];
+  const dataHelpcenter = [
+    "Call Center",
+    "Official Pages",
+    "Frequently Asked Question",
+    "History Background",
+    "Newsletter Subscription",
+  ];
+  const navigation = ["Home", "About", "Provide", "Benefits", "Contact"];
+  const dataSocialMedia = ["google", "facebook", "twitter", "linkedin"];
   return (
     <footer
       className="w-full bg-secondary text-gray-300 pt-20 pb-10"
@@ -56,74 +73,11 @@ function Footer() {
           </div>
 
           <div className="flex gap-2 flex-1 justify-between">
-            <div>
-              <h3 className="text-white font-semibold text-lg mb-4">Company</h3>
-              <ul className="space-y-2 text-sm">
-                {[
-                  "123 Avenue, New York",
-                  "+(1600) 456 7890",
-                  "yourid@example.com",
-                  "9:00 AM - 7:00 PM",
-                  "@officialpage",
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-2">
-                    <img
-                      src="/assets/images/icons/icon-arrow-right-small.png"
-                      alt="icon arrow"
-                      className="w-[4px] h-[6px]"
-                    />
-                    <span className="text-footer font-montserrat">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-white font-semibold text-lg mb-4">
-                Features
-              </h3>
-              <ul className="space-y-2 text-sm">
-                {["Home", "About", "Provide", "Benefits", "Contact"].map(
-                  (type) => (
-                    <li key={type} className="flex items-center gap-2">
-                      <img
-                        src="/assets/images/icons/icon-arrow-right-small.png"
-                        alt="icon arrow"
-                        className="w-[4px] h-[6px]"
-                      />
-                      <a href="#" className="text-footer font-montserrat">
-                        {type}
-                      </a>
-                    </li>
-                  )
-                )}
-              </ul>
-            </div>
+            <List data={dataCompany}>{"Company"}</List>
+            <List data={navigation}>{"Features"}</List>
 
             <div className="hidden sm:block">
-              <h3 className="text-white font-semibold text-lg mb-4">
-                Help Center
-              </h3>
-              <ul className="space-y-2 text-sm">
-                {[
-                  "Call Center",
-                  "Official Pages",
-                  "Frequently Asked Question",
-                  "History Background",
-                  "Newsletter Subscription",
-                ].map((type) => (
-                  <li key={type} className="flex items-center gap-2">
-                    <img
-                      src="/assets/images/icons/icon-arrow-right-small.png"
-                      alt="icon arrow"
-                      className="w-[4px] h-[6px]"
-                    />
-                    <a href="#" className="text-footer font-montserrat">
-                      {type}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+              <List data={dataHelpcenter}>{"Help Center"}</List>
             </div>
           </div>
         </div>

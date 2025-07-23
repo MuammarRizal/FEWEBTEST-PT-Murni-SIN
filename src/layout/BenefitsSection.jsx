@@ -1,3 +1,7 @@
+import Card from "../components/Card";
+import ContentSection from "../components/ContentSection";
+import TextContainer from "../components/TextContainer";
+
 function BenefitsSection() {
   const benefitCards = [
     {
@@ -50,70 +54,34 @@ function BenefitsSection() {
         {/* Grid Card */}
         <div className="w-full lg:w-1/2 grid grid-cols-2 gap-6">
           {benefitCards.map((item, index) => (
-            <div
+            <Card
               key={index}
-              className="bg-gray-50 py-4 sm:px-6 sm:py-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
-            >
-              <div
-                className={`${
-                  index === 0 ? "bg-primary" : ""
-                } text-primary mb-6 rounded-full w-[70px] h-[70px] flex justify-center items-center mx-auto md:mx-[unset]`}
-              >
-                <img src={item.icon} alt={item.title} loading="lazy" />
-              </div>
-              <h3 className="text-msn-14 sm:text-msn-18 font-semibold text-secondary mb-2 text-center sm:text-start">
-                {item.title}
-              </h3>
-              <p
-                className="text-msn-10 sm:text-sm text-gray-soft leading-relaxed text-center sm:text-start"
-                dangerouslySetInnerHTML={{ __html: item.description }}
-              />
-              <img
-                src="/assets/images/icons/icon-arrow-right-small-primary.png"
-                alt="icon"
-                className="mt-4 hidden sm:block"
-              />
-            </div>
+              title={item.title}
+              description={item.description}
+              icon={item.icon}
+              index={index}
+            />
           ))}
         </div>
 
-        {/* Text Section */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center">
-          <h4 className="title-section">Benefits</h4>
-
-          <h2
-            id="benefits-heading"
-            className="subtitle-section hidden sm:block"
-          >
-            Explore More About <br className="hidden md:block" />
-            Our Property & Benefits
-          </h2>
-
-          <h2
-            id="benefits-heading"
-            className="subtitle-section block sm:hidden"
-          >
-            Explore More About <br />
-            Property & Benefits
-          </h2>
-
-          <p className="description-section">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa.
-          </p>
-
+        <ContentSection
+          title={"Benefits"}
+          subtitlePc={"Explore More About Our Property & Benefits"}
+          subtitleMb={"Explore More About Our Property & Benefits"}
+          description={
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+          }
+        >
           {benefitDetails.map((item, index) => (
             <div key={index} className="mt-6">
-              <h3 className="text-msn-16 sm:text-msn-18 text-secondary font-semibold mb-2">
-                {item.title}
-              </h3>
-              <p
-                className="description-section"
-                dangerouslySetInnerHTML={{ __html: item.description }}
+              <TextContainer
+                title={item.title}
+                description={item.description}
+                key={index}
               />
             </div>
           ))}
-        </div>
+        </ContentSection>
       </div>
     </section>
   );

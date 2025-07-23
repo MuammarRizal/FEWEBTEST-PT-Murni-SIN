@@ -1,7 +1,23 @@
-import NavbarItem from "../components/header/NavbarItem";
-import { dataSocialMedia, dataTopNavbar } from "../datas/data.header";
+import NavbarItem from "../components/NavbarItem";
 
 function Header() {
+  const dataTopNavbar = [
+    {
+      icon: "phone",
+      text: "+(1600) 456 7890",
+    },
+    {
+      icon: "email",
+      text: "yourid@example.com",
+    },
+    {
+      icon: "address",
+      text: "123 Fifth Avenue",
+    },
+  ];
+
+  const dataSocialMedia = ["google", "facebook", "twitter", "linkedin"];
+
   return (
     <header className="w-full" role="banner">
       <div className="w-full bg-secondary py-2">

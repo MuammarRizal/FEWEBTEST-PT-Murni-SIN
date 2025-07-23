@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import Button from "../components/button/Button";
+import Button from "../components/Button";
 
 const SwiperGallery = ({ images, isMobile }) => {
   return (
