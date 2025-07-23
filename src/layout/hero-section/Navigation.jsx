@@ -5,7 +5,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="flex flex-wrap justify-between items-center gap-6 py-4  bg-gray-900">
+    <nav className="w-full flex flex-wrap justify-between items-center gap-6 py-4  bg-gray-900">
       {/* Logo */}
       <div className="logo flex items-center gap-3">
         <img

@@ -1,5 +1,6 @@
-@import "tailwindcss";
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --primary: #a85c01;
   --secondary: #252525;
@@ -11,10 +12,12 @@
 }
 
 body {
-  font-size: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .container-content {
+  width: 100%;
   padding-inline: 9.722vw;
 }
 
@@ -39,7 +42,7 @@ body {
 
 /* FONT-SIZE */
 .fs-12 {
-  font-size: 0.833vw;
+  font-size: 0.795rem;
 }
 
 .fs-16 {
@@ -54,8 +57,12 @@ body {
   font-size: 1.528vw;
 }
 
+.fs-36 {
+  font-size: 36px;
+}
+
 .fs-48 {
-  font-size: 3.333vw;
+  font-size: 3rem; /* convert dari 48px */
 }
 
 /* TEXT */
@@ -84,10 +91,20 @@ body {
 }
 
 /* Background */
-.bg-primary {
+/* .bg-primary {
   background-color: var(--primary);
-}
+} */
 
 .bg-secondary {
   background-color: var(--secondary);
+}
+
+/* ABOUT PAGE */
+#about {
+  position: relative;
+}
+
+#about .img-container {
+  width: 505px;
+  height: 367px;
 }
