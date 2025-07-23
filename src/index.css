@@ -113,15 +113,15 @@ body {
 /* Pastikan kamu sudah konfigurasi fontSize di tailwind.config.js */
 
 .title-section {
-  @apply text-msn-18 text-primary font-semibold mb-2;
+  @apply text-msn-14 sm:text-msn-18 text-primary font-semibold mb-2;
 }
 
 .subtitle-section {
-  @apply text-xl sm:text-2xl md:text-3xl lg:text-msn-36 font-semibold lg:leading-[1.3] mb-4 text-secondary leading-tight;
+  @apply text-msn-28 sm:text-2xl md:text-3xl lg:text-msn-36 font-semibold lg:leading-[1.3] mb-4 text-secondary leading-tight;
 }
 
 .description-section {
-  @apply text-sm sm:text-msn-16 text-gray-soft leading-relaxed;
+  @apply text-msn-14 sm:text-msn-16 text-gray-soft leading-relaxed;
 }
 
 .label {
@@ -133,5 +133,5 @@ body {
 }
 
 .container-content {
-  @apply relative px-4 md:px-14 lg:px-140;
+  @apply relative px-40 md:px-14 lg:px-140;
 }

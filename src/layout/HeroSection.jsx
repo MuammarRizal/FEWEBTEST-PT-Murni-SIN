@@ -31,9 +31,9 @@ function HeroSection() {
             <img
               src="/assets/images/icons/icon-logo.png"
               alt="Logo"
-              className="w-8 h-8"
+              className="w-msn-14 h-msn-14 md:w-8 md:h-8"
             />
-            <h3 className="text-white font-montserrat font-semibold italic text-xl md:text-msn-22">
+            <h3 className="text-white font-montserrat font-semibold italic text-16 md:text-msn-22">
               Skatcher
             </h3>
           </div>
@@ -67,13 +67,16 @@ function HeroSection() {
               <input
                 type="search"
                 id="search-dropdown"
-                className="py-2.5 px-6 h-[46px] text-sm w-40 bg-white text-gray-700 border border-gray-300 rounded-l-full focus:ring-blue-500 focus:border-blue-500"
+                className="py-2.5 px-6 h-[46px] text-sm w-40 bg-white text-gray-700 border border-gray-300 rounded-l-full focus:ring-blue-500 focus:border-blue-500 md:hidden lg:inline"
                 placeholder="Search Here"
                 required
               />
               <button
                 type="submit"
-                className="p-2.5 h-[46px] text-sm font-medium text-blue-500 bg-white border border-l-0 border-gray-300 rounded-r-full hover:bg-blue-50"
+                className="p-2.5 h-[46px] text-sm font-medium text-blue-500 border border-gray-300 border-l-0 rounded-r-full 
+             bg-white hover:bg-blue-50 
+             md:bg-transparent md:border-0 
+             lg:bg-white lg:border-gray-300"
               >
                 <svg
                   className="w-4 h-4"
@@ -94,16 +97,16 @@ function HeroSection() {
           </div>
         </nav>
 
-        <div className="flex flex-col-reverse lg:flex-row mt-14 gap-10">
-          <div className="text-container w-full lg:w-[60%] text-center md:text-left lg:mt-10 flex flex-col md:items-center lg:items-start">
+        <div className="flex flex-col lg:flex-row mt-14 gap-10">
+          <div className="text-container w-full lg:w-[60%] md:text-center md:text-left lg:mt-10 flex flex-col md:items-center lg:items-start">
             <h1
               id="hero-heading"
-              className="text-secondary lg:text-white font-semibold text-3xl md:text-4xl leading-tight md:leading-snug lg:leading-snug lg:text-msn-48 md:text-center lg:text-start"
+              className="text-white md:text-secondary lg:text-white font-semibold text-msn-34 md:text-4xl leading-tight md:leading-snug lg:leading-snug lg:text-msn-48 md:text-center lg:text-start"
             >
               Discover Modern <br />
               Single Property
             </h1>
-            <p className=" text-sm sm:text-msn-16 mt-6 md:mt-10 leading-relaxed md:text-secondary md:text-center lg:text-white-soft lg:text-start">
+            <p className="text-sm sm:text-msn-16 mt-6 md:mt-10 leading-relaxed md:text-secondary md:text-center lg:text-white-soft lg:text-start hidden sm:block">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean{" "}
               <br className="hidden sm:block" />
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque{" "}
@@ -111,17 +114,48 @@ function HeroSection() {
               penatibus et magnis dis parturient montes.
             </p>
 
+            <div className="mobile block sm:hidden w-max">
+              <p className="text-msn-14 mt-6 leading-relaxed text-white-soft">
+                Lorem ipsum dolor sit amet, consectetuer
+                <br /> adipiscing elit. Aenean commodo ligula
+                <br /> eget dolor. Aenean massa.
+              </p>
+              <p className="text-msn-14 mt-6 leading-relaxed text-white-soft">
+                Cum sociis natoque penatibus et magnis
+                <br /> dis parturient montes.
+              </p>
+            </div>
             <div className="button-container flex flex-wrap justify-center md:justify-start gap-3 mt-8 md:mt-10">
-              <Button className="bg-primary text-white hover:bg-primary-dark transition-colors text-msn-18 font-semibold">
+              <Button className="bg-primary text-white hover:bg-primary-dark transition-colors text-msn-16 sm:text-msn-18 font-semibold">
                 Overview
               </Button>
-              <Button className="border border-white text-white hover:bg-white hover:text-secondary bg-primary lg:bg-transparent transition-colors text-msn-18 font-semibold">
+              <Button className="border border-white text-white hover:bg-white hover:text-secondary bg-transparent sm:bg-primary lg:bg-transparent transition-colors text-msn-16 sm:text-msn-18 font-semibold">
                 Learn More
               </Button>
             </div>
-
+            <div className="block sm:hidden w-full mt-8">
+              <div className="swiper-container w-full sm:w-[350px] mx-auto">
+                <Swiper
+                  navigation={true}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                  aria-label="Property image gallery"
+                >
+                  {[1, 2, 3].map((i) => (
+                    <SwiperSlide key={i}>
+                      <img
+                        src={"https://placehold.co/425x653"}
+                        alt={`Modern property interior view ${i}`}
+                        className="w-full h-auto rounded-lg object-cover"
+                        loading={i === 1 ? "eager" : "lazy"}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+            </div>
             {/* Statistik */}
-            <div className="button-container flex flex-col sm:flex-row justify-center md:justify-start gap-10 sm:gap-16 md:gap-24 mt-20 sm:mt-28">
+            <div className="flex flex-row justify-between sm:justify-center md:justify-start gap-10 sm:gap-16 md:gap-24 mt-20 sm:mt-28">
               <div className="flex flex-col items-center sm:items-start">
                 <div className="flex items-center gap-4">
                   <img
@@ -129,11 +163,11 @@ function HeroSection() {
                     alt="icon location"
                     className="w-6 h-6 md:w-8 md:h-8"
                   />
-                  <p className="text-2xl sm:text-3xl md:text-msn-38 font-semibold text-secondary">
+                  <p className="text-msn-28 sm:text-3xl md:text-msn-38 font-semibold text-secondary">
                     4.500
                   </p>
                 </div>
-                <h4 className="text-base sm:text-msn-18 font-medium mt-2 text-secondary">
+                <h4 className="text-msn-14 sm:text-msn-18 font-medium mt-1 sm:mt-2 text-secondary">
                   Our Square Feets
                 </h4>
               </div>
@@ -144,11 +178,11 @@ function HeroSection() {
                     alt="icon stars"
                     className="w-6 h-6 md:w-8 md:h-8"
                   />
-                  <p className="text-2xl sm:text-3xl md:text-msn-38 font-semibold text-secondary">
-                    5.000
+                  <p className="text-msn-28 sm:text-3xl md:text-msn-38 font-semibold text-secondary">
+                    5.00
                   </p>
                 </div>
-                <h4 className="text-base sm:text-msn-18 font-medium mt-2 text-secondary">
+                <h4 className="text-msn-14 sm:text-msn-18 font-medium mt-1 sm:mt-2 text-secondary">
                   Rates by 1.100
                 </h4>
               </div>
@@ -156,7 +190,8 @@ function HeroSection() {
           </div>
 
           {/* Swiper Area */}
-          <div className="swiper-container w-full sm:w-[350px] md:w-[400px] lg:w-[425px] sm:h-[500px] md:h-[600px] lg:h-[653px] mx-auto">
+
+          <div className="hidden sm:block swiper-container w-full sm:w-[350px] md:w-[400px] lg:w-[425px] sm:h-[500px] md:h-[600px] lg:h-[653px] mx-auto">
             <Swiper
               navigation={true}
               modules={[Navigation]}

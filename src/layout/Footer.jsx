@@ -22,7 +22,7 @@ function Footer() {
               </span>
             </div>
 
-            <p className="text-white text-sm leading-relaxed lg:text-msn-12 lg:w-max">
+            <p className="text-white text-sm leading-relaxed lg:text-msn-12 lg:w-max hidden sm:block">
               Lorem ipsum dolor sit amet, consectetuer adipiscing{" "}
               <br className="hidden lg:block" />
               elit. Aenean commodo ligula eget dolor. Aenean massa.{" "}
@@ -30,6 +30,12 @@ function Footer() {
               Cum sociis natoque penatibus et magnis dis parturient{" "}
               <br className="hidden lg:block" />
               montes, nascetur ridiculus mus.
+            </p>
+
+            <p className="text-white text-msn-12 leading-relaxed lg:text-msn-12 lg:w-max block sm:hidden w-max">
+              Lorem ipsum dolor sit amet, consectetuer adipis <br />
+              cing elit. Aenean commodo ligula eget dolor. <br />
+              Aenean massa.
             </p>
 
             <div className="flex gap-3 mt-6">
@@ -70,7 +76,7 @@ function Footer() {
                       alt="icon arrow"
                       className="w-[4px] h-[6px]"
                     />
-                    <span className="text-footer font-montserrat ">{item}</span>
+                    <span className="text-footer font-montserrat">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -100,7 +106,7 @@ function Footer() {
             </div>
 
             {/* Help Center */}
-            <div>
+            <div className="hidden sm:block">
               <h3 className="text-white font-semibold text-lg mb-4">
                 Help Center
               </h3>
@@ -118,7 +124,7 @@ function Footer() {
                       alt="icon arrow"
                       className="w-[4px] h-[6px]"
                     />
-                    <a href="#" className="text-footer font-montserrat ">
+                    <a href="#" className="text-footer font-montserrat">
                       {type}
                     </a>
                   </li>
@@ -128,16 +134,21 @@ function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
-
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500 mt-20">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500 mt-20 hidden sm:flex">
           <p className="text-footer transition">Terms & Condition</p>
           <p className="text-footer text-center md:text-left">
             &copy; 2022 Skatcher. All Rights Reserved
           </p>
           <p className="text-footer hover:text-white transition">
             Privacy & Policy
+          </p>
+        </div>
+
+        {/* Bottom Mobile Text */}
+        <div className="mt-20 block sm:hidden">
+          <p className="text-footer text-msn-10">
+            &copy; 2022 Skatcher. All Rights Reserved
           </p>
         </div>
       </div>

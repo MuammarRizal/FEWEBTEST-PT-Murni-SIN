@@ -9,7 +9,7 @@ export const dataTopNavbar = [
   },
   {
     icon: "address",
-    text: "123 Fifth Avenue, New York - 1060, USA.",
+    text: "123 Fifth Avenue",
   },
 ];
 
