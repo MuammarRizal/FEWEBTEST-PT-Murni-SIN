@@ -25,6 +25,23 @@ Before you begin, make sure you have the following installed:
 - **Code Editor**: [Visual Studio Code](https://code.visualstudio.com/) recommended
 
 ---
+## 💻 Technologies Used
+
+```text
+| Technology   | Purpose                              |
+| ------------ | ------------------------------------ |
+| React        | Component-based frontend development |
+| Vite         | Fast build tool and dev server       |
+| Tailwind CSS | Utility-first CSS framework          |
+| Swiper.js    | Touch slider / carousel library      |
+| Lucide-react | Beautiful open-source icon set       |
+
+```
+## 🎨 Tailwind CSS Configuration Decision
+- Just-in-Time (JIT) mode enabled by default via Vite
+- Custom colors and fonts can be extended via tailwind.config.js
+- Used @apply for common utility classes inside component-level styling
+- scroll-smooth applied for smooth scrolling behavior across links
 
 ## 🚀 Getting Started
 
@@ -66,22 +83,7 @@ yarn dev
 ├── package.json
 └── vite.config.js
 
-### 4. 🔧 Main Technologies
-
-- React
-
-React is used for building reusable UI components.
-
-- Tailwind CSS
-
-Tailwind is used as the utility-first CSS framework. It is already configured via tailwind.config.js.
-
-- Swiper.js
-
-Used to create responsive sliders or carousels.
-Install command (already in dependencies):
-
-### 5. 🛠️ Build for Production
+### 4. 🛠️ Build for Production
 
 ```bash
 npm run build
@@ -89,7 +91,7 @@ npm run build
 yarn build
 ```
 
-### 6. 🧪 Preview Production Build
+### 5. 🧪 Preview Production Build
 
 ```bash
 npm run preview
