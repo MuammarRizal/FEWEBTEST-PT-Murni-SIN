@@ -15,7 +15,7 @@ function App() {
         Skip to main content
       </a>
       <Header />
-      <main id="main-content">
+      <main id="main-content" className="scroll-smooth">
         <HeroSection />
         <AboutSection />
         <ProvideSection />

@@ -128,13 +128,13 @@ function HeroSection() {
             } md:flex`}
           >
             <div className="text-white text-sm md:text-msn-18 font-medium">
-              About
+              <a href="#about">About</a>
             </div>
             <div className="text-white text-sm md:text-msn-18 font-medium">
-              Services
+              <a href="#benefits">Services</a>
             </div>
             <div className="text-white text-sm md:text-msn-18 font-medium">
-              Contact
+              <a href="#contact">Contact</a>
             </div>
 
             {/* Search Input */}
